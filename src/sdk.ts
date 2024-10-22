@@ -10,7 +10,7 @@ export default class CegaSolSDKV2 {
   private _signerWallet: anchor.Wallet;
 
   // Programs
-  private _fcnProgram: anchor.Program<Fcn> = anchor.workspace.Fcn;
+  private _fcnProgram?: anchor.Program<Fcn>;
 
   constructor(
     connection: Connection,
@@ -37,6 +37,6 @@ export default class CegaSolSDKV2 {
   }
 
   getProducts() {
-    return this._fcnProgram.account.fcnProduct.all();
+    return this._fcnProgram?.account.fcnProduct.all();
   }
 }

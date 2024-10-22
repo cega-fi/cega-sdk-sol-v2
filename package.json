@@ -1,6 +1,6 @@
 {
   "name": "@cega-fi/cega-sdk-sol-v2",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "an sdk to communicate with Cega's Solana programs v2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
